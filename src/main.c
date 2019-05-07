@@ -21,10 +21,16 @@ static void rec_Analaze(void *para){
 	
 }
 
+//Http_Post_RawJson_Data()
+//可替代“AT+QHTTPPOST”所需执行的操作
+//使用方法：cjon为需要发送的json数据
+//char *str = cJSON_PrintUnformatted(cjson);
+//Http_Post_RawJson_Data(str,80,80);
+
 
 int main(int argc, char **argv) {
 
-	if(gDevice_Uart_Init(tty_port,9600,rec_buf) == 0){
+	if(gDevice_Uart_Init(tty_port,115200,rec_buf) == 0){
 		
 		printf("gDevice_Uart_Init success\r\n");
 	}
