@@ -19,4 +19,4 @@ tty_port 为系统中实际serial_id , 如"/dev/ttymxc1"，根据实际情况可
 发送AT指令至EC20，带参发送与printf完全相同
 
 ### 1.4. Http_Post_RawJson_Data  ###
-可替代“AT+QHTTPPOST”所需执行的操作，发送原始json数据至服务器
+可替代“AT+QHTTPPOST”所需执行的操作，发送原始json数据至服务器，输入形参为cJSON_PrintUnformatted生成的字符串
