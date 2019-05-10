@@ -18,7 +18,7 @@ CFLAGS += -I$(DIR_INC)
 LIBS   += -lpthread -ldl -L$(DIR_LIB) -lgMyuartlzHttp
 
 
-TARGET = myEC20_Prj
+TARGET = uart
 
 BIN_TARGET = ${DIR_BIN}/${TARGET}
 
